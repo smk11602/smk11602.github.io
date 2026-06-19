@@ -111,10 +111,6 @@
   date: "2025.01"
   location: "Paris, France"
 
-- image: "gallery/kyoto.jpeg"
-  text: "😮"
-  date: ""
-  location: "Kyoto, Japan"
 
 - image: "gallery/graduate_mini.jpeg"
   text: "You did a great job too૮⑅ᐡ•ﻌ•ᐡა!"
@@ -123,6 +119,7 @@
 
 - image: "gallery/graduate.jpeg"
   text: "Finally graduated🎓"
-  date: "2025.02"
-  location: "Ewha Womans University"
-
+  date: "20- image: "gallery/osaka.jpeg"
+  text: "😮"
+  date: "2024"
+  location: "Osaka, Japan"
