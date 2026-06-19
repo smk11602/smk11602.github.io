@@ -4,7 +4,7 @@ name: "Mingyeong Song"
 intro: |
   Hi👋🏻! I am Mingyeong Song, an M.S. student at [PAI Lab](https://pai.ewha.ac.kr/), [Ewha Womans University](https://www.ewha.ac.kr/), advised by [Prof. Junhyug Noh](https://junhyug.github.io/).
   I received my B.S. in Computer Science and Engineering and Content Convergence (double major) from the same university.
-ㄱ
+
 # 연구 분야 — _data/home.yml 의 research 필드
 research: |
   My research interests lie at the intersection of 3D Vision, Human-centric Interaction, and Multimodal Learning.
