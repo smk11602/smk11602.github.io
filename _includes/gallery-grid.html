@@ -1,5 +1,14 @@
 {% include base_path %}
 
+{% assign dated_gallery = site.data.gallery | where_exp: "entry", "entry.date != blank" %}
+{% assign newest_date = dated_gallery | sort: 'date' | last %}
+{% assign new_image = '' %}
+{% for entry in site.data.gallery %}
+  {% if new_image == '' and entry.date == newest_date %}
+    {% assign new_image = entry.image %}
+  {% endif %}
+{% endfor %}
+
 <div class="photo-gallery">
   {% for item in site.data.gallery %}
     {% assign gallery_text = item.text | default: item.caption %}
@@ -32,7 +41,15 @@
       {% assign region = 'italy' %}
     {% endif %}
 
-    <figure class="photo-gallery__item photo-gallery__item--{{ region }}">
+    {% assign is_new = false %}
+    {% if item.image == new_image and new_image != '' %}
+      {% assign is_new = true %}
+    {% endif %}
+
+    <figure class="photo-gallery__item photo-gallery__item--{{ region }}{% if is_new %} photo-gallery__item--new{% endif %}">
+      {% if is_new %}
+        <span class="photo-gallery__badge">NEW!</span>
+      {% endif %}
       <img
         src="{% if item.image contains '://' %}{{ item.image }}{% else %}{{ item.image | prepend: '/images/' | prepend: base_path }}{% endif %}"
         alt="{% if gallery_text != '' %}{{ gallery_text | strip_html | strip_newlines }}{% elsif item.location != '' %}{{ item.location }}{% else %}Gallery photo{% endif %}"

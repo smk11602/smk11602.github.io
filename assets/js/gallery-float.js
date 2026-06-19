@@ -105,32 +105,4 @@
       burst(event.clientX, event.clientY, 5);
     });
   });
-
-  var items = Array.prototype.slice.call(gallery.querySelectorAll(".photo-gallery__item"));
-  var lastFeatured = -1;
-  var featuredMs = 2800;
-  var cycleMs = 4500;
-
-  function spotlight() {
-    if (items.length < 2) return;
-
-    items.forEach(function (item) {
-      item.classList.remove("photo-gallery__item--featured");
-    });
-
-    var index = lastFeatured;
-    while (index === lastFeatured) {
-      index = Math.floor(Math.random() * items.length);
-    }
-    lastFeatured = index;
-
-    items[index].classList.add("photo-gallery__item--featured");
-
-    window.setTimeout(function () {
-      items[index].classList.remove("photo-gallery__item--featured");
-    }, featuredMs);
-  }
-
-  window.setTimeout(spotlight, 1800);
-  window.setInterval(spotlight, cycleMs);
 })();
