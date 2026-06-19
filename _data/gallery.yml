@@ -28,11 +28,6 @@
   location: "Scopello, Sicily, Italy"
 
 
-- image: "gallery/florence.jpeg"
-  text: "Solo trip vibes: no face pics allowed🚫"
-  date: "2026.05"
-  location: "Florence, Italy"
-
 - image: "gallery/cefalu.jpeg"
   text: "Hello Boss, me today no job coming. Water too much! Water YESSSSS!!"
   date: "2026.05"
@@ -59,7 +54,7 @@
   location: ""
 
 - image: "gallery/book.jpeg"
-  text: "Trying to read 'a' bookthis year.. 📖"
+  text: "Is it always too late, or are there always chances to try??"
   date: "2025.09"
   location: "New South Wales, Australia"
 
@@ -116,6 +111,11 @@
 
 - image: "gallery/paris.jpeg"
   text: "Montmartre could be romantic before you get scammed.^^"
+  date: "2025.01"
+  location: "Paris, France"
+
+- image: "gallery/paris2.jpeg"
+  text: "🚷"
   date: "2025.01"
   location: "Paris, France"
 
