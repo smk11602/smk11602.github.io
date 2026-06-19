@@ -206,12 +206,14 @@ body.layout-home {
 }
 
 .home-pub__venue {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 0.95rem;
   color: var(--global-text-color);
   margin-bottom: 0.15rem;
 }
 
 .home-pub__authors {
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 0.85rem;
   font-style: italic;
   color: var(--global-muted-text-color, #555);
@@ -225,7 +227,7 @@ body.layout-home {
 }
 
 .home--subpage.home--gallery {
-  max-width: 960px;
+  max-width: 1080px;
 }
 
 .home-back {
@@ -278,8 +280,8 @@ body.layout-home {
 
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-  gap: 4px;
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+  gap: 5px;
   margin: 0 0 1.5rem;
 }
 
@@ -358,14 +360,55 @@ body.layout-home {
 
 @media (min-width: 768px) {
   .photo-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
-    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    gap: 6px;
   }
 }
 
 @media (min-width: 1024px) {
   .photo-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+  }
+}
+
+/* Water splash easter egg (home only) ----------------------------------- */
+
+.splash-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+.splash-droplet {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 30%,
+    rgba(160, 220, 255, 0.85),
+    rgba(70, 150, 220, 0.25)
+  );
+  box-shadow: 0 0 6px rgba(100, 180, 255, 0.35);
+  transform: translate(-50%, -50%) scale(0);
+  animation: splash-pop 0.65s ease-out forwards;
+  pointer-events: none;
+}
+
+@keyframes splash-pop {
+  0% {
+    transform: translate(-50%, -50%) scale(0.2);
+    opacity: 0.75;
+  }
+
+  35% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.55;
+  }
+
+  100% {
+    transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(0.15);
+    opacity: 0;
   }
 }
 
