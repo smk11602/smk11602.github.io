@@ -54,7 +54,7 @@
   location: ""
 
 - image: "gallery/book.jpeg"
-  text: "Is it always too late, or are there always chances to try??"
+  text: "Me being poetic: Is it always too late to try, or are there always chances to try?"
   date: "2025.09"
   location: "New South Wales, Australia"
 
@@ -79,13 +79,13 @@
   location: "Asahikawa, Hokkaido, Japan"
 
 - image: "gallery/balcony.jpeg"
-  text: "I was just like 'So.. should I really go to grad school?🤦🏻"
+  text: "I was just like 'So.. should I really go to grad school?🤦🏻'"
   date: "2025.02"
   location: ""
 
 
 - image: "gallery/seville.jpeg"
-  text: "My absolute favorite city in Spain!🇪🇸"
+  text: "My absolute favorite city in Spain🇪🇸!"
   date: "2025.01"
   location: "Seville, Spain"
 
@@ -110,7 +110,7 @@
   location: "Lisbon, Portugal"
 
 - image: "gallery/paris.jpeg"
-  text: "Montmartre could be romantic before you get scammed.^^"
+  text: "Montmartre to me == Watchout pickpocketers"
   date: "2025.01"
   location: "Paris, France"
 
@@ -120,12 +120,12 @@
   location: "Paris, France"
 
 - image: "gallery/graduate_mini.jpeg"
-  text: "Celebrating w/ my best friend 🐶"
+  text: "You did a great job too૮⑅ᐡ•ﻌ•ᐡა!"
   date: "2025.02"
   location: ""
 
 - image: "gallery/graduate.jpeg"
-  text: "Finally graduated!!🎓"
+  text: "Finally graduated🎓"
   date: "2025.02"
   location: "Ewha Womans University"
 

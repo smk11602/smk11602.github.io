@@ -232,7 +232,7 @@ body.layout-home {
 }
 
 .home--subpage.home--gallery {
-  max-width: 1080px;
+  max-width: 1120px;
 }
 
 .home-back {
@@ -285,8 +285,8 @@ body.layout-home {
 
 .photo-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
-  gap: 5px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
   margin: 0 0 1.5rem;
 }
 
@@ -316,31 +316,24 @@ body.layout-home {
   grid-row: span 2;
   z-index: 1;
   box-shadow:
-    inset 0 0 0 2px rgba(255, 255, 255, 0.85),
-    0 0 0 1px rgba(0, 0, 0, 0.1),
-    0 4px 14px rgba(0, 0, 0, 0.1);
+    inset 0 0 0 2px rgba(255, 255, 255, 0.9),
+    0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
 .photo-gallery__badge {
   position: absolute;
-  top: 0.45rem;
-  left: 0.45rem;
+  top: 0.5rem;
+  left: 0.5rem;
   z-index: 3;
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-size: 0.58rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   line-height: 1;
   color: #fff;
-  background: rgba(215, 55, 65, 0.92);
-  padding: 0.28rem 0.42rem;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 0.25rem 0.4rem;
   border-radius: 2px;
   pointer-events: none;
-}
-
-@media (max-width: 520px) {
-  .photo-gallery__item--new {
-    grid-row: span 1;
-  }
 }
 
 .photo-gallery__overlay {
@@ -453,16 +446,23 @@ body.layout-home {
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .photo-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
-    gap: 6px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 960px) {
   .photo-gallery {
-    grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+}
+
+@media (max-width: 639px) {
+  .photo-gallery__item--new {
+    grid-row: span 1;
   }
 }
 

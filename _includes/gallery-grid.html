@@ -48,7 +48,7 @@
 
     <figure class="photo-gallery__item photo-gallery__item--{{ region }}{% if is_new %} photo-gallery__item--new{% endif %}">
       {% if is_new %}
-        <span class="photo-gallery__badge">NEW!</span>
+        <span class="photo-gallery__badge">NEW</span>
       {% endif %}
       <img
         src="{% if item.image contains '://' %}{{ item.image }}{% else %}{{ item.image | prepend: '/images/' | prepend: base_path }}{% endif %}"
