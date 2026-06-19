@@ -32,8 +32,8 @@
         {% endif %}
 
         {% if pub.authors %}
-          {% assign authors_display = pub.authors | replace: "Mingyeong Song", "**Mingyeong Song**" %}
-          <p class="home-pub__authors">{{ authors_display | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+          {% assign authors_display = pub.authors | replace: "Mingyeong Song", "<strong>Mingyeong Song</strong>" %}
+          <p class="home-pub__authors">{{ authors_display }}</p>
         {% endif %}
       </div>
     </li>
