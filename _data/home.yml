@@ -1,0 +1,28 @@
+name: "Mingyeong Song"
+
+# 소속·소개 — _data/home.yml 의 intro 필드
+intro: |
+  Hi👋🏻! I am Mingyeong Song, an M.S. student at [PAI Lab](https://pai.ewha.ac.kr/), [Ewha Womans University](https://www.ewha.ac.kr/), advised by [Prof. Junhyug Noh](https://junhyug.github.io/).
+  I received my B.S. in Computer Science and Engineering and Content Convergence (double major) from the same university.
+ㄱ
+# 연구 분야 — _data/home.yml 의 research 필드
+research: |
+  My research interests lie at the intersection of 3D Vision, Human-centric Interaction, and Multimodal Learning.
+  I am interested in how humans interact with the world—how we perceive, move, listen, and reason—and in developing models that can learn to represent these processes.
+
+personal: |
+  Outside research, I enjoy traveling and spending time with family and friends — if I'm not in the lab, I'm probably by the sea ⛵️🐠 
+  I also genuinely love our lab..🫶🏻 My travel and daily photos are in [Gallery](/gallery/)!
+
+# 상단 링크 (Email / Scholar / Github / LinkedIn / Gallery)
+links:
+  - label: "Email"
+    url: "mailto:smk0219@ewha.ac.kr"
+  - label: "Google Scholar"
+    url: "https://scholar.google.com/"
+  - label: "Github"
+    url: "https://github.com/smk11602"
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/mingyeong-song-562421293/"
+  - label: "Gallery"
+    url: "/gallery/"

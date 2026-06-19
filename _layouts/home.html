@@ -1,0 +1,53 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="layout-home">
+
+    <main class="home">
+      {% include home-hero.html %}
+
+      <section class="home-section" id="research">
+        <h2>Research</h2>
+        <div class="home-section__content">
+          {{ site.data.home.research | markdownify }}
+        </div>
+      </section>
+
+      <section class="home-section" id="news">
+        <h2>News</h2>
+        <ul class="home-news">
+          {% for item in site.data.news %}
+            <li>
+              <span class="home-news__date">[{{ item.date }}]</span>
+              {{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="home-section" id="publications">
+        <h2>Publications</h2>
+        {% include home-publications.html %}
+      </section>
+
+      {{ content }}
+    </main>
+
+    <footer class="home-footer">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</p>
+    </footer>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

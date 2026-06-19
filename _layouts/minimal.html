@@ -1,0 +1,35 @@
+---
+layout: compress
+---
+
+{% include base_path %}
+
+<!doctype html>
+<html lang="{{ site.locale | slice: 0,2 }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+
+  <body class="layout-home layout-minimal">
+
+    <main class="home home--subpage">
+      <p class="home-back"><a href="{{ base_path }}/">&larr; {{ site.name | default: site.title }}</a></p>
+
+      {% if page.title %}
+        <h1 class="home-subpage__title">{{ page.title }}</h1>
+      {% endif %}
+
+      <div class="home-section__content">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="home-footer">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</p>
+    </footer>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

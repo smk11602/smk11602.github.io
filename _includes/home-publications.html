@@ -1,0 +1,41 @@
+{% include base_path %}
+
+<ul class="home-pubs">
+  {% assign pubs = site.publications | sort: 'date' | reverse %}
+  {% for pub in pubs %}
+    <li class="home-pub">
+      <div class="home-pub__thumb">
+        {% if pub.thumbnail %}
+          <img
+            src="{% if pub.thumbnail contains '://' %}{{ pub.thumbnail }}{% else %}{{ pub.thumbnail | prepend: '/images/' | prepend: base_path }}{% endif %}"
+            alt="{{ pub.title | strip_html }}"
+          />
+        {% else %}
+          <img
+            src="{{ '/images/500x300.png' | prepend: base_path }}"
+            alt="{{ pub.title | strip_html }}"
+          />
+        {% endif %}
+      </div>
+
+      <div class="home-pub__info">
+        <p class="home-pub__title">
+          {% if pub.paperurl %}
+            <a href="{{ pub.paperurl }}">{{ pub.title | markdownify | remove: '<p>' | remove: '</p>' }}</a>
+          {% else %}
+            {{ pub.title | markdownify | remove: '<p>' | remove: '</p>' }}
+          {% endif %}
+        </p>
+
+        {% if pub.authors %}
+          {% assign authors_display = pub.authors | replace: "Mingyeong Song", "**Mingyeong Song**" %}
+          <p class="home-pub__authors">{{ authors_display | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+        {% endif %}
+
+        {% if pub.venue %}
+          <p class="home-pub__venue"><em>{{ pub.venue }}</em></p>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>

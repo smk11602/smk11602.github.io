@@ -1,0 +1,19 @@
+---
+layout: minimal
+title: "Gallery"
+permalink: /gallery/
+author_profile: false
+---
+
+{% include base_path %}
+
+<ul class="home-gallery">
+{% for post in site.posts %}
+  <li>
+    <a href="{{ base_path }}{{ post.url }}">{{ post.title }}</a>
+    <span class="home-gallery__date">{{ post.date | date: "%Y.%m.%d" }}</span>
+  </li>
+{% endfor %}
+</ul>
+
+<p><em>*(Placeholder)* Blog posts will appear here. Add Markdown files to the <code>_posts/</code> folder.</em></p>
