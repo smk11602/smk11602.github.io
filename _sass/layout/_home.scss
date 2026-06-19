@@ -16,28 +16,40 @@ body.layout-home {
 /* Hero ------------------------------------------------------------------ */
 
 .home-hero {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  column-gap: 2rem;
+  row-gap: 0.75rem;
+  align-items: start;
   margin-bottom: 2.5rem;
 }
 
-.home-hero__text {
-  flex: 1 1 55%;
-  min-width: 260px;
-}
-
 .home-hero__name {
+  grid-column: 1;
+  grid-row: 1;
   font-size: 2rem;
   font-weight: 700;
-  margin: 0 0 1rem;
+  margin: 0;
   line-height: 1.2;
 }
 
+.home-hero__photo {
+  grid-column: 2;
+  grid-row: 1 / 3;
+  align-self: start;
+
+  img {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
 .home-hero__intro {
-  margin-bottom: 1rem;
+  grid-column: 1;
+  grid-row: 2;
   line-height: 1.6;
 
   p {
@@ -50,7 +62,8 @@ body.layout-home {
 }
 
 .home-hero__personal {
-  margin-bottom: 1rem;
+  grid-column: 1;
+  grid-row: 3;
   line-height: 1.6;
   font-size: 0.95rem;
   color: var(--global-muted-text-color, #555);
@@ -61,7 +74,9 @@ body.layout-home {
 }
 
 .home-hero__links {
-  margin: 0.5rem 0 0;
+  grid-column: 1;
+  grid-row: 4;
+  margin: 0;
   font-size: 0.95rem;
 
   a {
@@ -77,18 +92,6 @@ body.layout-home {
 .home-hero__sep {
   margin: 0 0.35rem;
   color: var(--global-text-color);
-}
-
-.home-hero__photo {
-  flex: 0 0 auto;
-
-  img {
-    display: block;
-    width: 220px;
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
 }
 
 /* Sections -------------------------------------------------------------- */
@@ -143,6 +146,8 @@ body.layout-home {
 
 .home-pub {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 1.25rem;
   align-items: flex-start;
   margin-bottom: 1.75rem;
@@ -154,6 +159,7 @@ body.layout-home {
 
 .home-pub__thumb {
   flex: 0 0 160px;
+  width: 160px;
 
   img {
     display: block;
@@ -190,11 +196,12 @@ body.layout-home {
 
 .home-pub__authors {
   font-size: 0.95rem;
+  font-style: italic;
 }
 
 .home-pub__venue {
   font-size: 0.9rem;
-  color: var(--global-muted-text-color, #555);
+  color: var(--global-text-color);
 }
 
 /* Subpages (Gallery, etc.) ---------------------------------------------- */
@@ -266,37 +273,25 @@ body.layout-home {
 
 /* Responsive ------------------------------------------------------------ */
 
-@include breakpoint($medium) {
-  .home-hero__photo img {
-    width: 200px;
-  }
-}
-
-@include breakpoint($small) {
+@media (max-width: 520px) {
   .home {
     padding-top: 2rem;
   }
 
   .home-hero {
-    flex-direction: column-reverse;
-    align-items: center;
-    text-align: center;
+    column-gap: 1rem;
   }
 
   .home-hero__photo img {
-    width: 180px;
+    width: 120px;
   }
 
-  .home-hero__links {
-    line-height: 1.8;
-  }
-
-  .home-pub {
-    flex-direction: column;
+  .home-hero__name {
+    font-size: 1.5rem;
   }
 
   .home-pub__thumb {
-    flex: none;
-    max-width: 200px;
+    flex: 0 0 100px;
+    width: 100px;
   }
 }

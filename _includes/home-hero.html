@@ -1,26 +1,7 @@
 {% include base_path %}
 
 <header class="home-hero">
-  <div class="home-hero__text">
-    <h1 class="home-hero__name">{{ site.data.home.name | default: site.name }}</h1>
-
-    <div class="home-hero__intro">
-      {{ site.data.home.intro | markdownify }}
-    </div>
-
-    {% if site.data.home.personal %}
-      <div class="home-hero__personal">
-        {{ site.data.home.personal | markdownify }}
-      </div>
-    {% endif %}
-
-    <p class="home-hero__links">
-      {% for link in site.data.home.links %}
-        {% unless forloop.first %}<span class="home-hero__sep">/</span>{% endunless %}
-        <a href="{{ link.url }}">{{ link.label }}</a>
-      {% endfor %}
-    </p>
-  </div>
+  <h1 class="home-hero__name">{{ site.data.home.name | default: site.name }}</h1>
 
   <div class="home-hero__photo">
     {% assign avatar = site.author.avatar %}
@@ -29,4 +10,21 @@
       alt="{{ site.name }}"
     />
   </div>
+
+  <div class="home-hero__intro">
+    {{ site.data.home.intro | markdownify }}
+  </div>
+
+  {% if site.data.home.personal %}
+    <div class="home-hero__personal">
+      {{ site.data.home.personal | markdownify }}
+    </div>
+  {% endif %}
+
+  <p class="home-hero__links">
+    {% for link in site.data.home.links %}
+      {% unless forloop.first %}<span class="home-hero__sep">/</span>{% endunless %}
+      <a href="{{ link.url }}">{{ link.label }}</a>
+    {% endfor %}
+  </p>
 </header>
