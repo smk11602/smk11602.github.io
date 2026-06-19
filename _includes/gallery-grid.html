@@ -16,18 +16,20 @@
 
     {% assign loc = item.location | downcase %}
     {% assign region = 'default' %}
-    {% if loc contains 'italy' or loc contains 'sicily' or loc contains 'napoli' or loc contains 'cefal' or loc contains 'favignana' or loc contains 'scopello' or loc contains 'florence' %}
-      {% assign region = 'italy' %}
-    {% elsif loc contains 'korea' or loc contains 'seoul' %}
-      {% assign region = 'korea' %}
+    {% if loc contains 'japan' or loc contains 'sapporo' or loc contains 'asahikawa' or loc contains 'hokkaido' %}
+      {% assign region = 'japan' %}
     {% elsif loc contains 'australia' or loc contains 'sydney' or loc contains 'port stephens' %}
       {% assign region = 'australia' %}
+    {% elsif loc contains 'korea' or loc contains 'seoul' or loc contains 'ewha' %}
+      {% assign region = 'korea' %}
+    {% elsif loc contains 'france' or loc contains 'paris' %}
+      {% assign region = 'france' %}
+    {% elsif loc contains 'portugal' or loc contains 'porto' or loc contains 'lisbon' %}
+      {% assign region = 'portugal' %}
     {% elsif loc contains 'spain' or loc contains 'toledo' or loc contains 'barcelona' or loc contains 'seville' %}
       {% assign region = 'spain' %}
-    {% elsif loc contains 'portugal' or loc contains 'porto' %}
-      {% assign region = 'portugal' %}
-    {% elsif loc contains 'japan' or loc contains 'sapporo' or loc contains 'asahikawa' or loc contains 'hokkaido' %}
-      {% assign region = 'japan' %}
+    {% elsif loc contains 'italy' or loc contains 'sicily' or loc contains 'napoli' or loc contains 'cefal' or loc contains 'favignana' or loc contains 'scopello' or loc contains 'florence' %}
+      {% assign region = 'italy' %}
     {% endif %}
 
     <figure class="photo-gallery__item photo-gallery__item--{{ region }}">
@@ -36,6 +38,8 @@
         alt="{% if gallery_text != '' %}{{ gallery_text | strip_html | strip_newlines }}{% elsif item.location != '' %}{{ item.location }}{% else %}Gallery photo{% endif %}"
         loading="lazy"
         decoding="async"
+        draggable="false"
+        oncontextmenu="return false;"
       />
       {% if has_overlay %}
         <figcaption class="photo-gallery__overlay">
