@@ -18,7 +18,7 @@
   location: "San Vito Lo Capo, Sicily, Italy"
 
 - image: "gallery/sunburn.jpeg"
-  text: "This sunburn is my badge of honor.☀️"
+  text: "This sunburn is my badge of honor☀️"
   date: "2026.05"
   location: "Sicily, Italy"
 
@@ -28,17 +28,17 @@
   location: "Napoli, Italy"
 
 - image: "gallery/florence.jpeg"
-  text: "Solo trip vibes: no face pics allowed.."
+  text: "Solo trip vibes: no face pics allowed"
   date: "2026.05"
   location: "Florence, Italy"
 
 - image: "gallery/cefalu.jpeg"
-  text: "swimming, eating, repeating 🌊"
+  text: "Hello Boss, me today no job coming. Water too much! Water YESSSSS!!"
   date: "2026.05"
   location: "Cefalù, Sicily, Italy"
 
 - image: "gallery/icassp.jpeg"
-  text: "First presentation at the conference ever!"
+  text: "Good start at ICASSP 2026 🎤"
   date: "2026.05"
   location: "ICASSP 2026"
 
@@ -53,7 +53,7 @@
   location: "Sydney, Australia"
 
 - image: "gallery/sidney2.jpeg"
-  text: "New desert experience: eating sand for free"
+  text: "New desert experience: eating sand for 🆓"
   date: "2025.09"
   location: "Port Stephens, Australia"
 
@@ -66,7 +66,6 @@
   text: "Train selfie somewhere in Asahikawa ㅋㅋ"
   date: "2025.07"
   location: "Asahikawa, Hokkaido, Japan"
-
 
 - image: "gallery/balcony.jpeg"
   text: "I was like 'Okay.. so should I really go to grad school?"
@@ -93,15 +92,15 @@
   date: "2025.01"
   location: "Porto, Portugal"
 
-- image: "gallery/paris.jpeg"
-  text: "Montmartre could be romantic before you get scammed.^^"
-  date: "2025.01"
-  location: "Paris, France"
-
 - image: "gallery/porto.jpeg"
   text: "Love all moments here..🥹"
   date: "2025.01"
   location: "Porto, Portugal"
+
+- image: "gallery/paris.jpeg"
+  text: "Montmartre could be romantic before you get scammed.^^"
+  date: "2025.01"
+  location: "Paris, France"
 
 - image: "gallery/graduate_mini.jpeg"
   text: "Celebrating w/ my best friend 🐶"
