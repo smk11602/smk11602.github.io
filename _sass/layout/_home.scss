@@ -387,30 +387,6 @@ body.layout-home {
   }
 }
 
-@media (hover: none) {
-  .photo-gallery__hint--touch {
-    display: block;
-    grid-column: 1 / -1;
-    margin: 0 0 0.25rem;
-    text-align: center;
-    font-size: 0.82rem;
-  }
-
-  .photo-gallery__item:has(.photo-gallery__overlay) {
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-  }
-
-  .photo-gallery__item--revealed img {
-    transform: scale(1.03);
-    opacity: 0.78;
-  }
-
-  .photo-gallery__item--revealed .photo-gallery__overlay {
-    opacity: 1;
-  }
-}
-
 /* Location tint overlays — one distinct hue per region ----------------- */
 
 .photo-gallery__item--italy .photo-gallery__overlay {
@@ -476,16 +452,6 @@ body.layout-home {
   will-change: transform, opacity;
   filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
   user-select: none;
-}
-
-.photo-gallery__hint {
-  font-size: 0.9rem;
-  color: var(--global-muted-text-color, #777);
-  margin: 0;
-}
-
-.photo-gallery__hint--touch {
-  display: none;
 }
 
 @media (min-width: 640px) {

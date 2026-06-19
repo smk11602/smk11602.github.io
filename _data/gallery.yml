@@ -22,7 +22,7 @@
 - image: "gallery/cefalu.jpeg"
   text: "Hello Boss, me today no job coming. Water too much! Water YESSSSS!!"
   date: "2026.05"
-  location: "Cefalù, Sicily, Italy"
+  location: "Cefalù, Italy"
 
 - image: "gallery/icassp.jpeg"
   text: "Good start at ICASSP 2026👍"
@@ -42,7 +42,7 @@
 - image: "gallery/HBD.jpeg"
   text: "🎂😋"
   date: "2026.02"
-  location: "Seoul, Korea"
+  location: ""
 
 
 - image: "gallery/sool.jpeg"
