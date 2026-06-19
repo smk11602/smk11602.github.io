@@ -11,7 +11,7 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body class="layout-home layout-minimal">
+  <body class="layout-home layout-minimal{% if page.url == '/gallery/' or page.url == '/gallery.html' %} layout-gallery{% endif %}">
 
     <main class="home home--subpage{% if page.url == '/gallery/' or page.url == '/gallery.html' %} home--gallery{% endif %}">
       <p class="home-back"><a href="{{ base_path }}/">&larr; {{ site.name | default: site.title }}</a></p>
@@ -30,6 +30,9 @@ layout: compress
     </footer>
 
     {% include scripts.html %}
+    {% if page.url == '/gallery/' or page.url == '/gallery.html' %}
+    <script src="{{ base_path }}/assets/js/gallery-float.js" defer></script>
+    {% endif %}
 
   </body>
 </html>

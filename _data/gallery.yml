@@ -8,7 +8,7 @@
   location: "Seoul, Korea"
 
 - image: "gallery/napoli.jpeg"
-  text: "The (similar) pizza🍕 from <Eat Pray Love>"
+  text: "The (similar) pizza🍕 from 「Eat Pray Love」"
   date: "2026.05"
   location: "Napoli, Italy"
 
@@ -69,7 +69,7 @@
   location: "Port Stephens, Australia"
 
 - image: "gallery/sapporo.jpeg"
-  text: "Sapporo beer festival w/ mom, dad, and the guy (same parents btw)""
+  text: "Sapporo beer festival w/ mom, dad, and the guy (same parents btw)"
   date: "2025.07"
   location: "Sapporo, Japan"
 

@@ -14,7 +14,23 @@
       {% assign has_overlay = true %}
     {% endif %}
 
-    <figure class="photo-gallery__item">
+    {% assign loc = item.location | downcase %}
+    {% assign region = 'default' %}
+    {% if loc contains 'italy' or loc contains 'sicily' or loc contains 'napoli' or loc contains 'cefal' or loc contains 'favignana' or loc contains 'scopello' or loc contains 'florence' %}
+      {% assign region = 'italy' %}
+    {% elsif loc contains 'korea' or loc contains 'seoul' %}
+      {% assign region = 'korea' %}
+    {% elsif loc contains 'australia' or loc contains 'sydney' or loc contains 'port stephens' %}
+      {% assign region = 'australia' %}
+    {% elsif loc contains 'spain' or loc contains 'toledo' or loc contains 'barcelona' or loc contains 'seville' %}
+      {% assign region = 'spain' %}
+    {% elsif loc contains 'portugal' or loc contains 'porto' %}
+      {% assign region = 'portugal' %}
+    {% elsif loc contains 'japan' or loc contains 'sapporo' or loc contains 'asahikawa' or loc contains 'hokkaido' %}
+      {% assign region = 'japan' %}
+    {% endif %}
+
+    <figure class="photo-gallery__item photo-gallery__item--{{ region }}">
       <img
         src="{% if item.image contains '://' %}{{ item.image }}{% else %}{{ item.image | prepend: '/images/' | prepend: base_path }}{% endif %}"
         alt="{% if gallery_text != '' %}{{ gallery_text | strip_html | strip_newlines }}{% elsif item.location != '' %}{{ item.location }}{% else %}Gallery photo{% endif %}"
@@ -39,3 +55,5 @@
     </figure>
   {% endfor %}
 </div>
+
+<div class="gallery-float-layer" aria-hidden="true"></div>
