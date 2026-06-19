@@ -58,6 +58,11 @@
   date: "2025.12"
   location: ""
 
+- image: "gallery/book.jpeg"
+  text: "Not really a book person… but trying this year 📖"
+  date: "2025.09"
+  location: "New South Wales, Australia"
+
 - image: "gallery/sidney.jpeg"
   text: "Beautiful view with sunburn in forehead"
   date: "2025.09"
@@ -83,10 +88,6 @@
   date: "2025.02"
   location: ""
 
-- image: "gallery/toledo.jpeg"
-  text: "Just lying down in front of Toledo Cathedral.,. Hallelujah(?)"
-  date: "2025.02"
-  location: "Toledo, Spain"
 
 - image: "gallery/seville.jpeg"
   text: "My absolute favorite city in Spain!🇪🇸"
