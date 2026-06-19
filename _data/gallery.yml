@@ -7,11 +7,6 @@
   date: "2026.06"
   location: "Seoul, Korea"
 
-- image: "gallery/napoli.jpeg"
-  text: "That pizza🍕 from 「Eat Pray Love」"
-  date: "2026.05"
-  location: "Napoli, Italy"
-
 
 - image: "gallery/sanvito.jpeg"
   text: "You just have to lie down when the view is super good lol"
@@ -43,6 +38,12 @@
   text: "Sooo lucky to be on this lab 💌 "
   date: "2026.02"
   location: "Seoul, Korea"
+
+- image: "gallery/HBD.jpeg"
+  text: "🎂😋"
+  date: "2026.02"
+  location: "Seoul, Korea"
+
 
 - image: "gallery/sool.jpeg"
   text: "Me: I’m being responsible tonight / Also Me: 🫨🔥🤸🏻🕺🏻"
