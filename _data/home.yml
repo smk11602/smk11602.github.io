@@ -2,7 +2,7 @@ name: "Mingyeong Song"
 
 # 소속·소개 — _data/home.yml 의 intro 필드
 intro: |
-  Hi👋🏻 I am Mingyeong Song, an M.S. student at [PAI Labᰔ](https://pai.ewha.ac.kr/), [Ewha Womans University](https://www.ewha.ac.kr/), advised by [Prof. Junhyug Noh](https://junhyug.github.io/).
+  Hi👋🏻 I'm Mingyeong Song, an M.S. student at [PAI Labᰔ](https://pai.ewha.ac.kr/), [Ewha Womans University](https://www.ewha.ac.kr/), advised by [Prof. Junhyug Noh](https://junhyug.github.io/).
   I received my B.S. in Computer Science and Engineering and Content Convergence (double major) from the same university.
 
 # 연구 분야 — _data/home.yml 의 research 필드
