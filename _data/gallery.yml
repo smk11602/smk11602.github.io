@@ -7,6 +7,11 @@
   date: "2026.06"
   location: "Seoul, Korea"
 
+- image: "gallery/napoli.jpeg"
+  text: "The (similar) pizza🍕 from <Eat Pray Love>"
+  date: "2026.05"
+  location: "Napoli, Italy"
+
 - image: "gallery/favignana.jpeg"
   text: "Do not say you've been to Italy's beach before Favignana.."
   date: "2026.05"
@@ -22,10 +27,6 @@
   date: "2026.05"
   location: "Scopello, Sicily, Italy"
 
-- image: "gallery/napoli.jpeg"
-  text: "The (similar) pizza from <Eat Pray Love>🍕"
-  date: "2026.05"
-  location: "Napoli, Italy"
 
 - image: "gallery/florence.jpeg"
   text: "Solo trip vibes: no face pics allowed🚫"
@@ -48,7 +49,7 @@
   location: "Seoul, Korea"
 
 - image: "gallery/pai.jpeg"
-  text: "So lucky to be on this lab"
+  text: "Sooooo lucky to be on this lab 💌 사랑행 "
   date: "2026.02"
   location: "Seoul, Korea"
 
@@ -72,7 +73,7 @@
   date: "2025.07"
   location: "Sapporo, Japan"
 
-- image: "gallery/asahikawa.jpe g"
+- image: "gallery/asahikawa.jpeg"
   text: "Train selfie somewhere in Asahikawa ㅋㅋ"
   date: "2025.07"
   location: "Asahikawa, Hokkaido, Japan"
@@ -83,7 +84,7 @@
   location: ""
 
 - image: "gallery/toledo.jpeg"
-  text: "Just lying down in front of Toledo Cathedral Hallelujah(?)"
+  text: "Just lying down in front of Toledo Cathedral.,. Hallelujah(?)"
   date: "2025.02"
   location: "Toledo, Spain"
 
