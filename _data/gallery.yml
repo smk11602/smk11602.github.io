@@ -1,0 +1,12 @@
+# Gallery images — add one entry per photo
+# 1. Put image files in images/gallery/
+# 2. Add an item below with image path and hover caption
+
+- image: "gallery/placeholder-1.jpg"
+  caption: "*(Placeholder)* Add your caption here."
+
+- image: "gallery/placeholder-2.jpg"
+  caption: "*(Placeholder)* Travel, daily life, etc."
+
+- image: "gallery/placeholder-3.jpg"
+  caption: "*(Placeholder)* Hover text appears on mouse over."

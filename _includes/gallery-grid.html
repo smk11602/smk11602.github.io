@@ -1,0 +1,20 @@
+{% include base_path %}
+
+<div class="photo-gallery">
+  {% for item in site.data.gallery %}
+    <figure class="photo-gallery__item">
+      <img
+        src="{% if item.image contains '://' %}{{ item.image }}{% else %}{{ item.image | prepend: '/images/' | prepend: base_path }}{% endif %}"
+        alt="{{ item.caption | strip_html | strip_newlines }}"
+        loading="lazy"
+      />
+      {% if item.caption %}
+        <figcaption class="photo-gallery__overlay">
+          <span class="photo-gallery__caption">{{ item.caption | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+        </figcaption>
+      {% endif %}
+    </figure>
+  {% endfor %}
+</div>
+
+<p class="photo-gallery__hint"><em>Add photos in <code>images/gallery/</code> and list them in <code>_data/gallery.yml</code>.</em></p>

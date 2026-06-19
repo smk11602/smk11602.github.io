@@ -13,7 +13,7 @@ layout: compress
 
   <body class="layout-home layout-minimal">
 
-    <main class="home home--subpage">
+    <main class="home home--subpage{% if page.url == '/gallery/' or page.url == '/gallery.html' %} home--gallery{% endif %}">
       <p class="home-back"><a href="{{ base_path }}/">&larr; {{ site.name | default: site.title }}</a></p>
 
       {% if page.title %}
