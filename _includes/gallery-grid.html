@@ -27,18 +27,11 @@
             {% if gallery_text != '' and gallery_text != nil %}
               <p class="photo-gallery__text">{{ gallery_text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
             {% endif %}
-            {% if item.date != '' and item.date != nil or item.location != '' and item.location != nil %}
-              <p class="photo-gallery__meta">
-                {% if item.date != '' and item.date != nil %}
-                  <span class="photo-gallery__date">{{ item.date }}</span>
-                {% endif %}
-                {% if item.date != '' and item.date != nil and item.location != '' and item.location != nil %}
-                  <span class="photo-gallery__meta-sep">·</span>
-                {% endif %}
-                {% if item.location != '' and item.location != nil %}
-                  <span class="photo-gallery__location">{{ item.location }}</span>
-                {% endif %}
-              </p>
+            {% if item.location != '' and item.location != nil %}
+              <p class="photo-gallery__location">{{ item.location }}</p>
+            {% endif %}
+            {% if item.date != '' and item.date != nil %}
+              <p class="photo-gallery__date">{{ item.date }}</p>
             {% endif %}
           </div>
         </figcaption>
