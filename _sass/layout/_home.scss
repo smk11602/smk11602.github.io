@@ -343,7 +343,7 @@ body.layout-home {
   align-items: center;
   justify-content: center;
   padding: 0.65rem;
-  background: rgba(0, 0, 0, 0.62);
+  background: rgba(0, 0, 0, 0.74);
   opacity: 0;
   transition: opacity 0.25s ease;
   pointer-events: none;
@@ -362,14 +362,14 @@ body.layout-home {
 }
 
 .photo-gallery__location {
-  color: rgba(255, 255, 255, 0.92);
+  color: rgba(255, 255, 255, 0.95);
   font-size: 0.68rem;
   line-height: 1.3;
   margin: 0 0 0.2rem;
 }
 
 .photo-gallery__date {
-  color: rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.85);
   font-size: 0.6rem;
   line-height: 1.2;
   margin: 0;
@@ -379,7 +379,7 @@ body.layout-home {
 @media (hover: hover) {
   .photo-gallery__item:hover img {
     transform: scale(1.03);
-    opacity: 0.85;
+    opacity: 0.78;
   }
 
   .photo-gallery__item:hover .photo-gallery__overlay {
@@ -390,31 +390,45 @@ body.layout-home {
 /* Location tint overlays — one distinct hue per region ----------------- */
 
 .photo-gallery__item--italy .photo-gallery__overlay {
-  background: rgba(195, 105, 45, 0.68);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    rgba(195, 105, 45, 0.74);
 }
 
 .photo-gallery__item--spain .photo-gallery__overlay {
-  background: rgba(115, 35, 60, 0.66);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    rgba(115, 35, 60, 0.72);
 }
 
 .photo-gallery__item--portugal .photo-gallery__overlay {
-  background: rgba(30, 125, 105, 0.64);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    rgba(30, 125, 105, 0.72);
 }
 
 .photo-gallery__item--france .photo-gallery__overlay {
-  background: rgba(75, 60, 145, 0.64);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    rgba(75, 60, 145, 0.72);
 }
 
 .photo-gallery__item--korea .photo-gallery__overlay {
-  background: rgba(35, 85, 165, 0.64);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    rgba(35, 85, 165, 0.72);
 }
 
 .photo-gallery__item--australia .photo-gallery__overlay {
-  background: rgba(210, 155, 25, 0.64);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.32)),
+    rgba(210, 155, 25, 0.72);
 }
 
 .photo-gallery__item--japan .photo-gallery__overlay {
-  background: rgba(185, 75, 115, 0.62);
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    rgba(185, 75, 115, 0.72);
 }
 
 /* Gallery floating emoji easter egg ------------------------------------ */
