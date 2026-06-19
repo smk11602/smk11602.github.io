@@ -166,14 +166,19 @@ body.layout-home {
 }
 
 .home-pub__thumb {
-  flex: 0 0 240px;
-  width: 240px;
+  flex: 0 0 280px;
+  width: 280px;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background: var(--global-bg-color, #fff);
+  border: 1px solid var(--global-border-color, #ddd);
 
   img {
     display: block;
     width: 100%;
-    height: auto;
-    border: 1px solid var(--global-border-color, #ddd);
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }
 
@@ -447,7 +452,7 @@ body.layout-home {
   }
 
   .home-pub__thumb {
-    flex: 0 0 130px;
-    width: 130px;
+    flex: 0 0 200px;
+    width: 200px;
   }
 }
