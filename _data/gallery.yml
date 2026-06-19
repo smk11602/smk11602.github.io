@@ -12,10 +12,6 @@
   date: "2026.05"
   location: "Napoli, Italy"
 
-- image: "gallery/favignana.jpeg"
-  text: "Do not say you've been to Italy's beach before Favignana.."
-  date: "2026.05"
-  location: "Favignana, Sicily, Italy"
 
 - image: "gallery/sanvito.jpeg"
   text: "You just have to lie down when the view is super good lol"
@@ -25,7 +21,7 @@
 - image: "gallery/swimming.jpeg"
   text: "🐟🐠🪸｡𖦹°‧★"
   date: "2026.05"
-  location: "Scopello, Sicily, Italy"
+  location: "Favignana, Italy"
 
 
 - image: "gallery/cefalu.jpeg"
@@ -39,7 +35,7 @@
   location: "ICASSP 2026"
 
 - image: "gallery/baseball.jpeg"
-  text: "My first baseball game⚾️! Team Doosan might be my team (maybe)"
+  text: "My first baseball game⚾️!"
   date: "2026.04"
   location: "Seoul, Korea"
 
@@ -49,7 +45,7 @@
   location: "Seoul, Korea"
 
 - image: "gallery/sool.jpeg"
-  text: "Me: I’m being responsible tonight. Also Me: 🫨🔥🤸🏻🕺🏻"
+  text: "Me: I’m being responsible tonight | Also Me: 🫨🔥🤸🏻🕺🏻"
   date: "2025.12"
   location: ""
 
@@ -97,7 +93,7 @@
 - image: "gallery/portosunset.jpeg"
   text: "The Best Sunset in my life!!🌅"
   date: "2025.01"
-  location: "Porto, Portugal"
+  location: "Lisbon, Portugal"
 
 - image: "gallery/porto2.jpeg"
   text: "( ˊ ᵕ ˋ )♡.°⑅"
@@ -107,10 +103,10 @@
 - image: "gallery/porto.jpeg"
   text: "Love all moments here..🇵🇹🥹"
   date: "2025.01"
-  location: "Lisbon, Portugal"
+  location: "Porto, Portugal"
 
 - image: "gallery/paris.jpeg"
-  text: "Montmartre to me == Watchout pickpocketers"
+  text: "Montmartre == Watchout pickpocketers"
   date: "2025.01"
   location: "Paris, France"
 
