@@ -103,10 +103,15 @@
   date: "2025.01"
   location: "Porto, Portugal"
 
-- image: "gallery/porto.jpeg"
-  text: "Love all moments here..🥹"
+- image: "gallery/porto2.jpeg"
+  text: "( ˊ ᵕ ˋ )♡.°⑅"
   date: "2025.01"
   location: "Porto, Portugal"
+
+- image: "gallery/porto.jpeg"
+  text: "Love all moments here..🇵🇹🥹"
+  date: "2025.01"
+  location: "Lisbon, Portugal"
 
 - image: "gallery/paris.jpeg"
   text: "Montmartre could be romantic before you get scammed.^^"
