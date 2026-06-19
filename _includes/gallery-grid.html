@@ -2,19 +2,47 @@
 
 <div class="photo-gallery">
   {% for item in site.data.gallery %}
+    {% assign gallery_text = item.text | default: item.caption %}
+    {% assign has_overlay = false %}
+    {% if gallery_text != '' and gallery_text != nil %}
+      {% assign has_overlay = true %}
+    {% endif %}
+    {% if item.date != '' and item.date != nil %}
+      {% assign has_overlay = true %}
+    {% endif %}
+    {% if item.location != '' and item.location != nil %}
+      {% assign has_overlay = true %}
+    {% endif %}
+
     <figure class="photo-gallery__item">
       <img
         src="{% if item.image contains '://' %}{{ item.image }}{% else %}{{ item.image | prepend: '/images/' | prepend: base_path }}{% endif %}"
-        alt="{{ item.caption | strip_html | strip_newlines }}"
+        alt="{% if gallery_text != '' %}{{ gallery_text | strip_html | strip_newlines }}{% elsif item.location != '' %}{{ item.location }}{% else %}Gallery photo{% endif %}"
         loading="lazy"
+        decoding="async"
       />
-      {% if item.caption %}
+      {% if has_overlay %}
         <figcaption class="photo-gallery__overlay">
-          <span class="photo-gallery__caption">{{ item.caption | markdownify | remove: '<p>' | remove: '</p>' }}</span>
+          <div class="photo-gallery__overlay-inner">
+            {% if gallery_text != '' and gallery_text != nil %}
+              <p class="photo-gallery__text">{{ gallery_text | markdownify | remove: '<p>' | remove: '</p>' }}</p>
+            {% endif %}
+            {% if item.date != '' and item.date != nil or item.location != '' and item.location != nil %}
+              <p class="photo-gallery__meta">
+                {% if item.date != '' and item.date != nil %}
+                  <span class="photo-gallery__date">{{ item.date }}</span>
+                {% endif %}
+                {% if item.date != '' and item.date != nil and item.location != '' and item.location != nil %}
+                  <span class="photo-gallery__meta-sep">·</span>
+                {% endif %}
+                {% if item.location != '' and item.location != nil %}
+                  <span class="photo-gallery__location">{{ item.location }}</span>
+                {% endif %}
+              </p>
+            {% endif %}
+          </div>
         </figcaption>
       {% endif %}
     </figure>
   {% endfor %}
 </div>
-
-<p class="photo-gallery__hint"><em>Add photos in <code>images/gallery/</code> and list them in <code>_data/gallery.yml</code>.</em></p>

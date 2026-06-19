@@ -8,6 +8,9 @@
     <img
       src="{% if avatar contains '://' %}{{ avatar }}{% else %}{{ avatar | prepend: '/images/' | prepend: base_path }}{% endif %}"
       alt="{{ site.name }}"
+      width="360"
+      height="480"
+      decoding="async"
     />
   </div>
 

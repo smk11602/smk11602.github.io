@@ -1,12 +1,111 @@
-# Gallery images — add one entry per photo
-# 1. Put image files in images/gallery/
-# 2. Add an item below with image path and hover caption
+# Gallery — 위에서부터 그리드 왼쪽 위 → 오른쪽 아래 순
+# text: hover 메인 문구 / date: 날짜 (예: 2026.02) / location: 장소
+# 셋 다 비우면 hover 오버레이 없음
 
-- image: "gallery/placeholder-1.jpg"
-  caption: "*(Placeholder)* Add your caption here."
+- image: "gallery/worldcup.jpeg"
+  text: "FIFA 2026 World Cup! LET'S GOOO 🇰🇷🔥"
+  date: "2026.06"
+  location: "Seoul, Korea"
 
-- image: "gallery/placeholder-2.jpg"
-  caption: "*(Placeholder)* Travel, daily life, etc."
+- image: "gallery/favignana.jpeg"
+  text: "Do not say you've been to Italy's beach before Favignana.."
+  date: "2026.05"
+  location: "Favignana, Sicily, Italy"
 
-- image: "gallery/placeholder-3.jpg"
-  caption: "*(Placeholder)* Hover text appears on mouse over."
+- image: "gallery/sanvito.jpeg"
+  text: "You just have to lie down when the view is super good."
+  date: "2026.05"
+  location: "San Vito Lo Capo, Sicily, Italy"
+
+- image: "gallery/sunburn.jpeg"
+  text: "This sunburn is my badge of honor.☀️"
+  date: "2026.05"
+  location: "Sicily, Italy"
+
+- image: "gallery/napoli.jpeg"
+  text: "The (similar) pizza from <Eat Pray Love>🍕"
+  date: "2026.05"
+  location: "Napoli, Italy"
+
+
+- image: "gallery/cefalu.jpeg"
+  text: "swimming, eating, repeating 🌊"
+  date: "2026.05"
+  location: "Cefalù, Sicily, Italy"
+
+- image: "gallery/icassp.jpeg"
+  text: "First presentation at the conference ever!"
+  date: "2026.05"
+  location: "ICASSP 2026"
+
+- image: "gallery/baseball.jpeg"
+  text: "My first baseball game⚾️! Team Doosan might be my team (maybe)"
+  date: "2026.04"
+  location: "Seoul, Korea"
+
+- image: "gallery/sidney.jpeg"
+  text: "Sydney heat was brutal. Damn!!!"
+  date: "2025.09"
+  location: "Sydney, Australia"
+
+- image: "gallery/sidney2.jpeg"
+  text: "Desert experience: eating sand for free"
+  date: "2025.09"
+  location: "Port Stephens, Australia"
+
+- image: "gallery/sapporo.jpeg"
+  text: "Sapporo beer festival with lovely family 🍺"
+  date: "2025.07"
+  location: "Sapporo, Japan"
+
+- image: "gallery/asahikawa.jpeg"
+  text: "Train selfie somewhere in Asahikawa lol"
+  date: "2025.07"
+  location: "Asahikawa, Hokkaido, Japan"
+
+
+- image: "gallery/balcony.jpeg"
+  text: "I was like 'Okay.. so should I really go to grad school?"
+  date: "2025.02"
+  location: ""
+
+- image: "gallery/toledo.jpeg"
+  text: "Lying down in front of Toledo Cathedral Hallelujah"
+  date: "2025.02"
+  location: "Toledo, Spain"
+  
+- image: "gallery/seville.jpeg"
+  text: "My absolute favorite city in Spain!🇪🇸"
+  date: "2025.01"
+  location: ""
+
+- image: "gallery/barcelona.jpeg"
+  text: "Got a smile tattoo in Barcelona.. ㅎㅎ"
+  date: "2025.01"
+  location: "Barcelona, Spain"
+
+- image: "gallery/portosunset.jpeg"
+  text: "The. Best. Sunset in my life!!"
+  date: "2025.01"
+  location: "Porto, Portugal"
+
+- image: "gallery/paris.jpeg"
+  text: "Montmartre could be romantic before you get scammed.^^"
+  date: "2025.01"
+  location: "Paris, France"
+
+- image: "gallery/porto.jpeg"
+  text: "Love all moments here..🥹"
+  date: "2025.01"
+  location: "Porto, Portugal"
+
+- image: "gallery/graduate_mini.jpeg"
+  text: "Celebrating w/ my best friend 🐶"
+  date: "2025.02"
+  location: ""
+
+- image: "gallery/graduate.jpeg"
+  text: "Did I actually graduate?"
+  date: "2025.02"
+  location: "Ewha Womans University"
+

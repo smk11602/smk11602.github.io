@@ -27,13 +27,13 @@
           {% endif %}
         </p>
 
+        {% if pub.venue %}
+          <p class="home-pub__venue">{{ pub.venue }}</p>
+        {% endif %}
+
         {% if pub.authors %}
           {% assign authors_display = pub.authors | replace: "Mingyeong Song", "**Mingyeong Song**" %}
           <p class="home-pub__authors">{{ authors_display | markdownify | remove: '<p>' | remove: '</p>' }}</p>
-        {% endif %}
-
-        {% if pub.venue %}
-          <p class="home-pub__venue">{{ pub.venue }}</p>
         {% endif %}
       </div>
     </li>
