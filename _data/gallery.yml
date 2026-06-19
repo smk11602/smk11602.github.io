@@ -80,7 +80,6 @@
   date: "2025.02"
   location: ""
 
-
 - image: "gallery/seville.jpeg"
   text: "My absolute favorite city in Spain🇪🇸!"
   date: "2025.01"
@@ -119,7 +118,10 @@
 
 - image: "gallery/graduate.jpeg"
   text: "Finally graduated🎓"
-  date: "20- image: "gallery/osaka.jpeg"
+  date: "2025.02"
+  location: "Ewha Womans University"
+
+- image: "gallery/osaka.jpeg"
   text: "😮"
-  date: "2024"
+  date: ""
   location: "Osaka, Japan"
