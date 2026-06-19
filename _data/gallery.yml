@@ -49,7 +49,7 @@
   location: "Seoul, Korea"
 
 - image: "gallery/pai.jpeg"
-  text: "Sooooo lucky to be on this lab 💌 사랑행 "
+  text: "Sooooo lucky to be on this lab 💌 "
   date: "2026.02"
   location: "Seoul, Korea"
 
@@ -59,7 +59,7 @@
   location: ""
 
 - image: "gallery/sidney.jpeg"
-  text: "Sydney heat was brutal. Damn!!!"
+  text: "Beautiful view with sunburn in forehead"
   date: "2025.09"
   location: "Sydney, Australia"
 
@@ -69,7 +69,7 @@
   location: "Port Stephens, Australia"
 
 - image: "gallery/sapporo.jpeg"
-  text: "Sapporo beer festival with lovely family 🍺"
+  text: "Sapporo beer festival w/ mom, dad, and the guy (same parents btw)""
   date: "2025.07"
   location: "Sapporo, Japan"
 
@@ -94,7 +94,7 @@
   location: ""
 
 - image: "gallery/barcelona.jpeg"
-  text: "Got a smile tattoo in Barcelona.. 😊ㅎㅎ"
+  text: "Got a smile tattoo in Barcelona.. 😊"
   date: "2025.01"
   location: "Barcelona, Spain"
 
