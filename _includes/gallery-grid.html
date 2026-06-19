@@ -10,6 +10,7 @@
 {% endfor %}
 
 <div class="photo-gallery">
+  <p class="photo-gallery__hint photo-gallery__hint--touch">Tap a photo for details</p>
   {% for item in site.data.gallery %}
     {% assign gallery_text = item.text | default: item.caption %}
     {% assign has_overlay = false %}
