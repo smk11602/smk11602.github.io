@@ -6,5 +6,5 @@ date: 2026-09-01
 venue: "ECCV 2026"
 authors: "Mingyeong Song, Jungbin Cho, Jisoo Kim, Ananya Bal, Kartik Sharma, Youngjae Yu, Laszlo A. Jeni, and Junhyug Noh"
 thumbnail: "publications/JointHOI.png"
-paperurl:
+paperurl: "/JointHOI/"
 ---

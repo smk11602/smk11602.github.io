@@ -1,0 +1,245 @@
+---
+layout: project-page
+title: "JointHOI: Jointly Generating Contact Maps Enhances Hand Object Interaction Generation"
+permalink: /JointHOI/
+---
+
+{% include base_path %}
+
+<!-- ===== Hero / Title ===== -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            JointHOI: Jointly Generating Contact Maps Enhances Hand Object Interaction Generation
+          </h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="{{ base_path }}/">Mingyeong Song</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+              Jungbin Cho<sup>2,3</sup>,
+            </span>
+            <span class="author-block">
+              Jisoo Kim<sup>2</sup>,
+            </span>
+            <span class="author-block">
+              Ananya Bal<sup>3</sup>,
+            </span>
+            <span class="author-block">
+              Kartik Sharma<sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://youngjae-yu.github.io/" target="_blank">Youngjae Yu</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="http://www.cs.cmu.edu/~laszlojeni/" target="_blank">Laszlo A. Jeni</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://sites.google.com/view/junhyug-noh" target="_blank">Junhyug Noh</a><sup>1</sup>†
+            </span>
+          </div>
+
+          <div class="is-size-6 publication-authors" style="margin-top: 0.5rem;">
+            <span class="author-block"><sup>1</sup>Ewha Womans University</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>Yonsei University</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>3</sup>Carnegie Mellon University</span>&nbsp;&nbsp;
+            <span class="author-block"><sup>4</sup>Seoul National University</span>
+          </div>
+
+          <div class="column has-text-centered" style="margin-top: 1rem;">
+            <div class="publication-links">
+              <!-- Paper link — fill in when available -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark"
+                   title="Paper coming soon"
+                   aria-disabled="true"
+                   style="pointer-events: none; opacity: 0.6;">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code link — fill in when available -->
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark"
+                   title="Code coming soon"
+                   aria-disabled="true"
+                   style="pointer-events: none; opacity: 0.6;">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Teaser ===== -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <!--
+        이미지 준비 후 주석 해제:
+        <img src="{{ base_path }}/images/jointhoi/teaser.png" alt="JointHOI Teaser" style="max-width:100%; border-radius:8px;" />
+      -->
+      <p class="subtitle is-6" style="margin-top: 1rem; font-style: italic;">
+        JointHOI generates physically grounded bimanual interactions from diverse text prompts.
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ===== Abstract ===== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Text-driven hand–object interaction (HOI) generation is gaining attention for immersive applications and robotics,
+            yet producing physically plausible interactions remains challenging.
+            Even when individual motions appear natural, small contact errors can cause conspicuous artifacts
+            such as floating and interpenetration.
+            Prior methods mitigate these issues using explicit contact cues or implicit grasp priors,
+            but typically rely on multi-stage pipelines and fail to model temporally evolving contact.
+          </p>
+          <p>
+            We present <strong>JointHOI</strong>, a single-stage diffusion framework that jointly generates
+            3D hand-object motion and dynamic, distance-based contact maps from text.
+            By treating contact as an auxiliary <em>inner modality</em>, joint generation enables the model
+            to learn contact–motion coupling during training.
+            At inference, contact-guided sampling enforces consistency between generated contact maps
+            and motion-implied geometry, improving temporal stability and reducing penetration and floating.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ===== Method ===== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Method</h2>
+    <div class="content has-text-justified">
+      <p>
+        To address the limitations of prior multi-stage or implicit approaches, we propose <strong>JointHOI</strong>,
+        a framework that treats contact not as a post-processing signal,
+        but as an <em>inner modality</em> of hand–object motion.
+      </p>
+    </div>
+
+    <!--
+      메인 Figure 이미지 준비 후 주석 해제:
+      <div class="has-text-centered" style="margin: 1.5rem 0;">
+        <img src="{{ base_path }}/images/jointhoi/method.png"
+             alt="JointHOI Method Overview"
+             style="max-width:100%; border-radius:8px;" />
+      </div>
+    -->
+
+    <div class="content has-text-justified">
+      <p>We jointly model 3D hand–object motion and dynamic, distance-based contact maps within a unified diffusion framework.</p>
+      <ul>
+        <li>
+          <strong>Joint Generation.</strong>
+          We introduce a single-stage diffusion model that jointly generates 3D hand–object motion together with
+          <strong>dynamic, distance-based contact maps</strong>.
+          By modeling motion and contact within a unified generative process,
+          the model learns explicit <em>contact–motion coupling</em> and captures their spatiotemporal co-evolution.
+        </li>
+        <li>
+          <strong>Contact Inner Guidance (CIG).</strong>
+          At inference time, we leverage the generated contact maps as an <em>inner guidance signal</em>
+          to steer the denoising process.
+          CIG enforces consistency between predicted contact and motion-implied geometry,
+          significantly reducing artifacts such as <strong>interpenetration</strong>, <strong>floating</strong>,
+          and unstable grasps.
+        </li>
+      </ul>
+      <p>
+        This design enables physically plausible and temporally stable hand–object interactions directly from text,
+        without requiring multi-stage pipelines or post-hoc refinement.
+      </p>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ===== Experiments ===== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Experiments</h2>
+
+    <h3 class="title is-5 has-text-centered" style="margin-top: 1.5rem;">Quantitative Results</h3>
+    <!--
+      <div class="has-text-centered">
+        <img src="{{ base_path }}/images/jointhoi/quantitative.png"
+             alt="Quantitative Results"
+             style="max-width:100%; border-radius:8px;" />
+      </div>
+    -->
+
+    <h3 class="title is-5 has-text-centered" style="margin-top: 2rem;">Qualitative Results</h3>
+    <!--
+      <div class="has-text-centered">
+        <img src="{{ base_path }}/images/jointhoi/qualitative.png"
+             alt="Qualitative Results"
+             style="max-width:100%; border-radius:8px;" />
+      </div>
+    -->
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ===== Videos ===== -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3 has-text-centered">Videos</h2>
+
+    <h3 class="title is-5 has-text-centered" style="margin-top: 1.5rem;">Comparison with Baselines</h3>
+    <!--
+      YouTube embed:
+      <div class="publication-video" style="margin-bottom: 2rem;">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
+    -->
+
+    <h3 class="title is-5 has-text-centered" style="margin-top: 2rem;">Additional Qualitative Results</h3>
+    <!--
+      <div class="publication-video">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+      </div>
+    -->
+  </div>
+</section>
+
+<hr class="section-divider" />
+
+<!-- ===== Citation ===== -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{song2026jointhoi,
+  title     = {JointHOI: Jointly Generating Contact Maps Enhances Hand Object Interaction Generation},
+  author    = {Song, Mingyeong and Cho, Jungbin and Kim, Jisoo and Bal, Ananya and Sharma, Kartik and Yu, Youngjae and Jeni, Laszlo A. and Noh, Junhyug},
+  booktitle = {Proceedings of the European Conference on Computer Vision (ECCV)},
+  year      = {2026},
+}</code></pre>
+  </div>
+</section>
