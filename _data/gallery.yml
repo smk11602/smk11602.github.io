@@ -2,14 +2,24 @@
 # text: hover 메인 문구 / date: 날짜 (예: 2026.02) / location: 장소
 # 셋 다 비우면 hover 오버레이 없음
 
-- image: "gallery/worldcup.jpeg"
-  text: "FIFA 2026 World Cup🏆, LET'S GOOO 🇰🇷🔥"
-  date: "2026.06"
+- image: "gallery/busanmt.JPG"
+  text: "PAI in Busan 💚"
+  date: "2026.07"
+  location: "Busan, Korea"
+
+- image: "gallery/icml.JPG"
+  text: "We went to ICML 2026 held in Seoul!"
+  date: "2026.07"
   location: "Seoul, Korea"
 
 
+- image: "gallery/worldcup.jpeg"
+  text: "FIFA 2026 World Cup 🇰🇷🔥"
+  date: "2026.06"
+  location: "Seoul, Korea"
+
 - image: "gallery/sanvito.jpeg"
-  text: "You just have to lie down when the view is super good lol"
+  text: "You just have to lie down when the view is super good"
   date: "2026.05"
   location: "San Vito Lo Capo, Sicily, Italy"
 
@@ -66,7 +76,7 @@
   location: "Port Stephens, Australia"
 
 - image: "gallery/sapporo.jpeg"
-  text: "Sapporo beer festival🍻, not a beer fan though"
+  text: "Sapporo beer festival🍻"
   date: "2025.07"
   location: "Sapporo, Japan"
 
@@ -76,7 +86,7 @@
   location: "Asahikawa, Hokkaido, Japan"
 
 - image: "gallery/balcony.jpeg"
-  text: "I was just like 'So.. should I really go to grad school?🤦🏻'"
+  text: "I don't want to go home🤦🏻"
   date: "2025.02"
   location: ""
 

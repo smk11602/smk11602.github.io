@@ -6,5 +6,5 @@ date: 2026-04-01
 venue: "ICASSP 2026"
 authors: "Mingyeong Song*, Seoyeon Ko*, Junhyug Noh"
 thumbnail: "publications/SIREN.png"
-paperurl: ""
+arxivurl: "https://arxiv.org/abs/2603.29820"
 ---

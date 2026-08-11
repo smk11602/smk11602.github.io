@@ -225,6 +225,27 @@ body.layout-home {
   margin-bottom: 0;
 }
 
+.home-pub__links {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 0.88rem;
+  margin-top: 0.35rem !important;
+  margin-bottom: 0 !important;
+
+  a {
+    color: var(--global-link-color);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.home-pub__sep {
+  margin: 0 0.3rem;
+  color: var(--global-muted-text-color, #777);
+}
+
 /* Subpages (Gallery, etc.) ---------------------------------------------- */
 
 .home--subpage {
