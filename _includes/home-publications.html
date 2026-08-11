@@ -43,19 +43,28 @@
         {% if pub.arxivurl or pub.homepage or pub.paperurl or pub.codeurl %}
           <p class="home-pub__links">
             {% if pub.arxivurl %}
-              <a href="{{ pub.arxivurl }}" target="_blank" rel="noopener">arXiv</a>
+              <a class="home-pub__btn" href="{{ pub.arxivurl }}" target="_blank" rel="noopener">
+                <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                <span>arXiv</span>
+              </a>
             {% endif %}
             {% if pub.homepage %}
-              {% if pub.arxivurl %}<span class="home-pub__sep">/</span>{% endif %}
-              <a href="{% if pub.homepage contains '://' %}{{ pub.homepage }}{% else %}{{ pub.homepage | prepend: base_path }}{% endif %}">Homepage</a>
+              <a class="home-pub__btn" href="{% if pub.homepage contains '://' %}{{ pub.homepage }}{% else %}{{ pub.homepage | prepend: base_path }}{% endif %}">
+                <i class="fas fa-file" aria-hidden="true"></i>
+                <span>Project page</span>
+              </a>
             {% endif %}
             {% if pub.paperurl %}
-              {% if pub.arxivurl or pub.homepage %}<span class="home-pub__sep">/</span>{% endif %}
-              <a href="{{ pub.paperurl }}"{% if pub.paperurl contains '://' %} target="_blank" rel="noopener"{% endif %}>PDF</a>
+              <a class="home-pub__btn" href="{{ pub.paperurl }}"{% if pub.paperurl contains '://' %} target="_blank" rel="noopener"{% endif %}>
+                <i class="fas fa-file-pdf" aria-hidden="true"></i>
+                <span>PDF</span>
+              </a>
             {% endif %}
             {% if pub.codeurl %}
-              {% if pub.arxivurl or pub.homepage or pub.paperurl %}<span class="home-pub__sep">/</span>{% endif %}
-              <a href="{{ pub.codeurl }}" target="_blank" rel="noopener">Code</a>
+              <a class="home-pub__btn" href="{{ pub.codeurl }}" target="_blank" rel="noopener">
+                <i class="fab fa-github" aria-hidden="true"></i>
+                <span>Code</span>
+              </a>
             {% endif %}
           </p>
         {% endif %}
