@@ -16,7 +16,7 @@ permalink: /JointHOI/
             JointHOI: Jointly Generating Contact Maps Enhances Hand Object Interaction Generation
           </h1>
 
-          <div class="is-size-5 publication-venue" style="margin: 0.75rem auto 1rem;">
+          <div class="is-size-3 publication-venue" style="margin: 0.75rem auto 1rem;">
             ECCV 2026
           </div>
 
@@ -90,10 +90,11 @@ permalink: /JointHOI/
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body has-text-centered">
-      <!--
-        이미지 준비 후 주석 해제:
-        <img src="{{ base_path }}/images/jointhoi/teaser.png" alt="JointHOI Teaser" style="max-width:100%; border-radius:8px;" />
-      -->
+      <img
+        src="{{ base_path }}/images/jointhoi/teaser.png"
+        alt="JointHOI Teaser"
+        style="max-width:100%; border-radius:8px;"
+      />
       <p class="subtitle is-6" style="margin-top: 1rem; font-style: italic;">
         JointHOI generates physically grounded bimanual interactions from diverse text prompts.
       </p>
@@ -138,24 +139,21 @@ permalink: /JointHOI/
 <section class="section">
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Method</h2>
+
+    <div class="has-text-centered" style="margin: 1.5rem 0;">
+      <img
+        src="{{ base_path }}/images/jointhoi/main_fig.png"
+        alt="JointHOI Method Overview"
+        style="max-width:100%; border-radius:8px;"
+      />
+    </div>
+
     <div class="content has-text-justified">
       <p>
         To address the limitations of prior multi-stage or implicit approaches, we propose <strong>JointHOI</strong>,
         a framework that treats contact not as a post-processing signal,
         but as an <em>inner modality</em> of hand–object motion.
       </p>
-    </div>
-
-    <!--
-      메인 Figure 이미지 준비 후 주석 해제:
-      <div class="has-text-centered" style="margin: 1.5rem 0;">
-        <img src="{{ base_path }}/images/jointhoi/method.png"
-             alt="JointHOI Method Overview"
-             style="max-width:100%; border-radius:8px;" />
-      </div>
-    -->
-
-    <div class="content has-text-justified">
       <p>We jointly model 3D hand–object motion and dynamic, distance-based contact maps within a unified diffusion framework.</p>
       <ul>
         <li>
@@ -190,22 +188,22 @@ permalink: /JointHOI/
     <h2 class="title is-3 has-text-centered">Experiments</h2>
 
     <h3 class="title is-5 has-text-centered" style="margin-top: 1.5rem;">Quantitative Results</h3>
-    <!--
-      <div class="has-text-centered">
-        <img src="{{ base_path }}/images/jointhoi/quantitative.png"
-             alt="Quantitative Results"
-             style="max-width:100%; border-radius:8px;" />
-      </div>
-    -->
+    <div class="has-text-centered">
+      <img
+        src="{{ base_path }}/images/jointhoi/quantitative.png"
+        alt="Quantitative Results"
+        style="max-width:100%; border-radius:8px;"
+      />
+    </div>
 
     <h3 class="title is-5 has-text-centered" style="margin-top: 2rem;">Qualitative Results</h3>
-    <!--
-      <div class="has-text-centered">
-        <img src="{{ base_path }}/images/jointhoi/qualitative.png"
-             alt="Qualitative Results"
-             style="max-width:100%; border-radius:8px;" />
-      </div>
-    -->
+    <div class="has-text-centered">
+      <img
+        src="{{ base_path }}/images/jointhoi/qualitative.png"
+        alt="Qualitative Results"
+        style="max-width:100%; border-radius:8px;"
+      />
+    </div>
   </div>
 </section>
 
@@ -217,19 +215,34 @@ permalink: /JointHOI/
     <h2 class="title is-3 has-text-centered">Videos</h2>
 
     <h3 class="title is-5 has-text-centered" style="margin-top: 1.5rem;">Comparison with Baselines</h3>
-    <!--
-      YouTube embed:
-      <div class="publication-video" style="margin-bottom: 2rem;">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-      </div>
-    -->
+    <div class="has-text-centered" style="margin-bottom: 2rem;">
+      <video
+        controls
+        playsinline
+        preload="metadata"
+        style="width:100%; max-width:100%; border-radius:10px; background:#000;"
+      >
+        <source
+          src="{{ base_path }}/images/jointhoi/video/Comparison_with_baselines.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
 
     <h3 class="title is-5 has-text-centered" style="margin-top: 2rem;">Additional Qualitative Results</h3>
-    <!--
-      <div class="publication-video">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-      </div>
-    -->
+    <div class="has-text-centered">
+      <video
+        controls
+        playsinline
+        preload="metadata"
+        style="width:100%; max-width:100%; border-radius:10px; background:#000;"
+      >
+        <source
+          src="{{ base_path }}/images/jointhoi/video/Additional_qualitative_result.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
   </div>
 </section>
 
