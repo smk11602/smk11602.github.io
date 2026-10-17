@@ -7,6 +7,11 @@
   date: "2026.09"
   location: "Amsterdam, Netherlands"
 
+- image: "gallery/iceland2.jpg"
+  text: "🌈"
+  date: "2026.09"
+  location: "Skógafoss, Iceland"
+
 - image: "gallery/iceland1.jpg"
   text: "Mother of nature 🇮🇸🥹"
   date: "2026.09"
@@ -31,11 +36,6 @@
   text: "Went to Jeju with my family!"
   date: "2026.08"
   location: "Jeju Island, Korea"
-
-- image: "gallery/busanmtt.jpg"
-  text: "PAI in Busan 💚"
-  date: "2026.08"
-  location: "Busan, Korea"
 
 - image: "gallery/icml.JPG"
   text: "We went to ICML 2026 held in Seoul!"
@@ -69,11 +69,6 @@
   date: "2026.05"
   location: "ICASSP 2026"
 
-- image: "gallery/baseball.jpeg"
-  text: "My first baseball game⚾️!"
-  date: "2026.04"
-  location: "Seoul, Korea"
-
 - image: "gallery/pai.jpeg"
   text: "Sooo lucky to be on this lab 💌 "
   date: "2026.02"
@@ -84,7 +79,6 @@
   date: "2026.02"
   location: ""
 
-
 - image: "gallery/sool.jpeg"
   text: "Me: I’m being responsible tonight / Also Me: 🫨🔥🤸🏻🕺🏻"
   date: "2025.12"
@@ -94,11 +88,6 @@
   text: "📚🙂‍↔️"
   date: "2025.09"
   location: "New South Wales, Australia"
-
-- image: "gallery/sidney.jpeg"
-  text: "Beautiful view with sunburn in forehead🔥"
-  date: "2025.09"
-  location: "Sydney, Australia"
 
 - image: "gallery/sidney2.jpeg"
   text: "🇦🇺 🐨"
