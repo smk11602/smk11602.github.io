@@ -5,4 +5,5 @@ permalink: /publication/placeholder-paper-3
 date: 2027-03-02
 venue: "WACV 2027"
 authors: "Jihyun Yu, Mingyeong Song*, Jae Yi Sung*, Soomin Kim, Wonho Bae, Mingyu Kim, Junhyug Noh"
+thumbnail: "publications/PolarityVQA.png"
 ---
