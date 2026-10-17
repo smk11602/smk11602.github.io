@@ -2,9 +2,39 @@
 # text: hover 메인 문구 / date: 날짜 (예: 2026.02) / location: 장소
 # 셋 다 비우면 hover 오버레이 없음
 
+- image: "gallery/amsterdam.jpg"
+  text: "🇳🇱🌷"
+  date: "2026.09"
+  location: "Amsterdam, Netherlands"
+
+- image: "gallery/iceland1.jpg"
+  text: "Mother of nature 🇮🇸🥹"
+  date: "2026.09"
+  location: "Glacier Lagoon, Iceland"
+
+- image: "gallery/icelandaurora.jpg"
+  text: "Strong aurora spotted in Iceland!"
+  date: "2026.09"
+  location: "Hallormsstaoaskogur, Iceland"
+
+- image: "gallery/copenhagen.jpg"
+  text: "Cozy copenhagen!"
+  date: "2026.09"
+  location: "Copenhagen, Denmark" 
+
+- image: "gallery/eccv.PNG"
+  text: "Presentation at ECCV 2026!"
+  date: "2026.09"
+  location: "Malmö, Sweden" 
+
+- image: "gallery/jeju.jpg"
+  text: "Went to Jeju with my family!"
+  date: "2026.08"
+  location: "Jeju Island, Korea"
+
 - image: "gallery/busanmtt.jpg"
   text: "PAI in Busan 💚"
-  date: "2026.07"
+  date: "2026.08"
   location: "Busan, Korea"
 
 - image: "gallery/icml.JPG"

@@ -4,17 +4,14 @@
   {% assign pubs = site.publications | sort: 'date' | reverse %}
   {% for pub in pubs %}
     <li class="home-pub">
-      <div class="home-pub__thumb">
+      <div class="home-pub__thumb{% unless pub.thumbnail %} home-pub__thumb--soon{% endunless %}">
         {% if pub.thumbnail %}
           <img
             src="{% if pub.thumbnail contains '://' %}{{ pub.thumbnail }}{% else %}{{ pub.thumbnail | prepend: '/images/' | prepend: base_path }}{% endif %}"
             alt="{{ pub.title | strip_html }}"
           />
         {% else %}
-          <img
-            src="{{ '/images/500x300.png' | prepend: base_path }}"
-            alt="{{ pub.title | strip_html }}"
-          />
+          <span>Coming soon</span>
         {% endif %}
       </div>
 
