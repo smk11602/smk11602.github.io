@@ -33,7 +33,7 @@
   location: "Malmö, Sweden" 
 
 - image: "gallery/jeju.jpg"
-  text: "Went to Jeju with my family!"
+  text: "Jeju with my family!"
   date: "2026.08"
   location: "Jeju Island, Korea"
 
@@ -44,7 +44,7 @@
 
 
 - image: "gallery/worldcup.jpeg"
-  text: "FIFA 2026 World Cup 🇰🇷🔥"
+  text: "🇰🇷🔥"
   date: "2026.06"
   location: "Seoul, Korea"
 
