@@ -11,6 +11,7 @@ body.layout-home {
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 1.5rem 2rem;
+  font-size: 1.05rem;
 }
 
 /* Hero ------------------------------------------------------------------ */
@@ -27,7 +28,7 @@ body.layout-home {
 .home-hero__name {
   grid-column: 1;
   grid-row: 1;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   margin: 0 0 0.15rem;
   line-height: 1.25;
@@ -53,7 +54,7 @@ body.layout-home {
   grid-row: 2;
   line-height: 1.55;
   margin-top: 0;
-  font-size: 0.92rem;
+  font-size: 1.05rem;
 
   p {
     margin: 0 0 0.45rem;
@@ -68,7 +69,7 @@ body.layout-home {
   grid-column: 1;
   grid-row: 3;
   line-height: 1.55;
-  font-size: 0.88rem;
+  font-size: 1rem;
   color: var(--global-muted-text-color, #555);
   margin-top: 0.35rem;
 
@@ -81,7 +82,7 @@ body.layout-home {
   grid-column: 1;
   grid-row: 4;
   margin: 0;
-  font-size: 0.88rem;
+  font-size: 1rem;
 
   a {
     color: var(--global-link-color);
@@ -104,9 +105,9 @@ body.layout-home {
   margin-bottom: 3.75rem;
 
   h2 {
-    font-size: 1.05rem;
+    font-size: 1.5rem;
     font-weight: 700;
-    margin: 0 0 0.65rem;
+    margin: 0 0 0.85rem;
   }
 
   &:last-child {
@@ -194,8 +195,8 @@ body.layout-home {
 
 .home-pub__title {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 400;
-  font-size: 0.9rem;
+  font-weight: 700;
+  font-size: 1.3rem;
   line-height: 1.35;
   margin-bottom: 0.15rem;
 
@@ -212,14 +213,18 @@ body.layout-home {
 
 .home-pub__venue {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--global-text-color);
   margin-bottom: 0.1rem;
 }
 
+#publications .home-pub__venue {
+  font-size: 1.15rem;
+}
+
 .home-pub__authors {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 0.76rem;
+  font-size: 1.1rem;
   font-style: italic;
   color: var(--global-muted-text-color, #555);
   margin-bottom: 0;
@@ -242,13 +247,13 @@ body.layout-home {
   background: #242424;
   color: #fff !important;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 0.74rem;
+  font-size: 0.88rem;
   line-height: 1.2;
   text-decoration: none !important;
   transition: background 0.15s ease, opacity 0.15s ease;
 
   i {
-    font-size: 0.78rem;
+    font-size: 0.9rem;
   }
 
   &:hover {
@@ -578,12 +583,12 @@ body.layout-home {
   }
 
   .home-hero__name {
-    font-size: 1.35rem;
+    font-size: 1.55rem;
   }
 
   .home-pub__thumb {
-    flex: 0 0 200px;
-    width: 200px;
+    flex: 0 0 38%;
+    width: 38%;
   }
 }
 
@@ -591,14 +596,14 @@ body.layout-home {
 
 .home-exp__intro {
   margin: 0 0 1rem;
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   line-height: 1.55;
 }
 
 .home-pub.home-exp__item {
   align-items: center;
   gap: 0.9rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 1.35rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -606,10 +611,8 @@ body.layout-home {
 }
 
 .home-exp__logo {
-  flex: 0 0 clamp(78px, 24vw, 136px);
-  height: 2.5rem;
-  display: grid;
-  place-items: center;
+  flex: 0 0 min(clamp(156px, 48vw, 272px), 45%);
+  height: 5rem;
 
   img {
     display: block;
@@ -621,7 +624,7 @@ body.layout-home {
 
 .home-exp__item .home-pub__info {
   .home-pub__title {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
     font-weight: 600;
   }
 
