@@ -11,7 +11,7 @@ body.layout-home {
   max-width: 900px;
   margin: 0 auto;
   padding: 3rem 1.5rem 2rem;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
 }
 
 /* Hero ------------------------------------------------------------------ */
@@ -28,7 +28,7 @@ body.layout-home {
 .home-hero__name {
   grid-column: 1;
   grid-row: 1;
-  font-size: 1.75rem;
+  font-size: 1.6rem;
   font-weight: 700;
   margin: 0 0 0.15rem;
   line-height: 1.25;
@@ -54,7 +54,7 @@ body.layout-home {
   grid-row: 2;
   line-height: 1.55;
   margin-top: 0;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
 
   p {
     margin: 0 0 0.45rem;
@@ -69,7 +69,7 @@ body.layout-home {
   grid-column: 1;
   grid-row: 3;
   line-height: 1.55;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--global-muted-text-color, #555);
   margin-top: 0.35rem;
 
@@ -82,7 +82,7 @@ body.layout-home {
   grid-column: 1;
   grid-row: 4;
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
 
   a {
     color: var(--global-link-color);
@@ -105,7 +105,7 @@ body.layout-home {
   margin-bottom: 3.75rem;
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     font-weight: 700;
     margin: 0 0 0.85rem;
   }
@@ -196,7 +196,7 @@ body.layout-home {
 .home-pub__title {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   line-height: 1.35;
   margin-bottom: 0.15rem;
 
@@ -213,18 +213,18 @@ body.layout-home {
 
 .home-pub__venue {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--global-text-color);
   margin-bottom: 0.1rem;
 }
 
 #publications .home-pub__venue {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
 }
 
 .home-pub__authors {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-style: italic;
   color: var(--global-muted-text-color, #555);
   margin-bottom: 0;
@@ -247,13 +247,13 @@ body.layout-home {
   background: #242424;
   color: #fff !important;
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 0.88rem;
+  font-size: 0.8rem;
   line-height: 1.2;
   text-decoration: none !important;
   transition: background 0.15s ease, opacity 0.15s ease;
 
   i {
-    font-size: 0.9rem;
+    font-size: 0.82rem;
   }
 
   &:hover {
@@ -559,7 +559,7 @@ body.layout-home {
   margin: 0 auto;
   padding: 0 1.5rem 2rem;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   color: var(--global-muted-text-color, #777);
 
   p {
@@ -583,7 +583,7 @@ body.layout-home {
   }
 
   .home-hero__name {
-    font-size: 1.55rem;
+    font-size: 1.4rem;
   }
 
   .home-pub__thumb {
@@ -596,7 +596,7 @@ body.layout-home {
 
 .home-exp__intro {
   margin: 0 0 1rem;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   line-height: 1.55;
 }
 
@@ -630,7 +630,7 @@ body.layout-home {
 
 .home-exp__item .home-pub__info {
   .home-pub__title {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
     font-weight: 600;
   }
 
@@ -649,10 +649,10 @@ body.layout-home {
   }
 
   .home-exp__item .home-pub__info .home-pub__title {
-    font-size: 0.88rem;
+    font-size: 0.8rem;
   }
 
   .home-exp__item .home-pub__venue {
-    font-size: 0.78rem;
+    font-size: 0.72rem;
   }
 }
