@@ -1,8 +1,8 @@
 {% include base_path %}
 
-<ul class="home-pubs">
+<ul class="home-exp">
   {% for item in site.data.experience %}
-    <li class="home-pub home-exp__item">
+    <li class="home-exp__item">
       <div class="home-exp__logo">
         {% if item.logo %}
           <img src="{{ item.logo | prepend: '/images/' | prepend: base_path }}" alt="" />
