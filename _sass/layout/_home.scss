@@ -589,10 +589,16 @@ body.layout-home {
 
 /* Experience ------------------------------------------------------------ */
 
+.home-exp__intro {
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
 .home-pub.home-exp__item {
   align-items: center;
   gap: 0.9rem;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.8rem;
 
   &:last-child {
     margin-bottom: 0;
@@ -600,8 +606,8 @@ body.layout-home {
 }
 
 .home-exp__logo {
-  flex: 0 0 clamp(70px, 22vw, 120px);
-  height: 2.25rem;
+  flex: 0 0 clamp(78px, 24vw, 136px);
+  height: 2.5rem;
   display: grid;
   place-items: center;
 
@@ -613,6 +619,13 @@ body.layout-home {
   }
 }
 
-.home-exp__item .home-pub__info p:last-child {
-  margin-bottom: 0;
+.home-exp__item .home-pub__info {
+  .home-pub__title {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }

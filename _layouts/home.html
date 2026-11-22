@@ -35,14 +35,15 @@ layout: compress
         </ul>
       </section>
 
+      <section class="home-section" id="experience">
+        <h2>Experience</h2>
+        <p class="home-exp__intro">I collaborate with industry and clinical partners to develop AI for practical use across different fields. These collaborations have taught me how to turn research ideas into tools that meet real needs.</p>
+        {% include home-experience.html %}
+      </section>
+
       <section class="home-section" id="publications">
         <h2>Publications</h2>
         {% include home-publications.html %}
-      </section>
-
-      <section class="home-section" id="experience">
-        <h2>Experience</h2>
-        {% include home-experience.html %}
       </section>
 
       {{ content }}
