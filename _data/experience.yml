@@ -1,23 +1,13 @@
-# Internship & Projects — newest first
+# Experience — newest first
 
 - org: "sPresto"
-  url: "https://www.spresto.net/"
   logo: "orgs/spresto.svg"
   period: "Aug. 2025 – Present"
-  items:
-    - "Real-time security device detection AI model"
 
 - org: "Ewha Womans University Seoul Hospital"
-  url: "https://seoul.eumc.ac.kr/main.do"
   logo: "orgs/eumc.svg"
   period: "Present"
-  items:
-    - "Multi-view Pulmonary Nodule Assessment from Chest X-rays"
-    - "AI-based hair loss severity assessment"
 
 - org: "BMSmile"
-  url: "https://bmsmile.com/"
   logo: "orgs/bmsmile.png"
   period: "Jan. 2025 – Aug. 2025"
-  items:
-    - "Commercial advertising image generator using a text-to-image model"
