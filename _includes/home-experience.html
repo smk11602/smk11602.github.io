@@ -1,0 +1,31 @@
+{% include base_path %}
+
+<ul class="home-exp">
+  {% for item in site.data.experience %}
+    <li class="home-exp__item">
+      {% if item.logo %}
+        <a class="home-exp__logo" href="{{ item.url }}" target="_blank" rel="noopener">
+          <img
+            src="{{ item.logo | prepend: '/images/' | prepend: base_path }}"
+            alt="{{ item.org }}"
+          />
+        </a>
+      {% endif %}
+      <div class="home-exp__body">
+        <div class="home-exp__head">
+          <p class="home-exp__org">
+            <a href="{{ item.url }}" target="_blank" rel="noopener">{{ item.org }}</a>
+          </p>
+          {% if item.period %}
+            <p class="home-exp__period">{{ item.period }}</p>
+          {% endif %}
+        </div>
+        <ul class="home-exp__items">
+          {% for line in item.items %}
+            <li>{{ line }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,7 +1,7 @@
 {% include base_path %}
 
 <ul class="home-pubs">
-  {% assign pubs = site.publications | sort: 'date' | reverse %}
+  {% assign pubs = site.publications | sort: 'order' %}
   {% for pub in pubs %}
     <li class="home-pub">
       <div class="home-pub__thumb{% unless pub.thumbnail %} home-pub__thumb--soon{% endunless %}">
